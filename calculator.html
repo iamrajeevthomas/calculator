@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        .div1{
+            height:450px;
+            width:300px;
+            background-color:cornflowerblue;
+            margin:10px;
+        }
+        .box{
+            width:250px;
+            height:50px;
+            margin-top:20px;
+            border:2px solid black;
+        }
+        .div2{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .btn{
+            height:50px;
+            width:50px;
+            background-color:aqua;
+            border:none;
+            padding:5px;
+            margin:10px;
+            border-radius:50%;
+            font-weight:bold;
+        }
+        .div3{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        h2{
+            margin:30px;
+            font-size:30px;
+            color:Black;
+        }
+        .divc{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <input type="textbox" readonly class="box">
+        </div>
+        <div class="div3">
+            <button class="btn"
+            onclick="
+            display=display+'0';
+            document.querySelector('.box').value=display";
+            >0</button>
+            <button class="btn" onclick="
+            display=display+'1'
+            document.querySelector('.box').value=display;
+            ">1</button>
+            <button class="btn"
+            onclick="
+            display=display+'2'
+            document.querySelector('.box').value=display";
+            >2</button>
+            <button class="btn"
+            
+            onclick="
+            display=display+'3'
+            document.querySelector('.box').value=display";
+            
+            >3</button>
+            <button class="btn"
+            onclick="
+            display=display+'4'
+            document.querySelector('.box').value=display";
+            >4</button>
+            <button class="btn"
+            onclick="
+            display=display+'5'
+            document.querySelector('.box').value=display";
+            >5</button>
+            <button class="btn"
+            onclick="
+            display=display+'6'
+            document.querySelector('.box').value=display";
+            >6</button>
+            <button class="btn"
+            onclick="
+            display=display+'7'
+            document.querySelector('.box').value=display";
+            >7</button>
+            <button class="btn"
+            onclick="
+            display=display+'8'
+            document.querySelector('.box').value=display";
+            >8</button>
+            <button class="btn"
+            onclick="
+            display=display+'9'
+            document.querySelector('.box').value=display";>9</button>
+            <button class="btn"
+            onclick="
+            display=display+'+'
+            document.querySelector('.box').value=display";
+            >+</button>
+            <button class="btn"
+            onclick="
+            display=display+'-'
+            document.querySelector('.box').value=display";
+            >-</button>
+            <button class="btn"
+            onclick="
+            display=display+'*'
+            document.querySelector('.box').value=display";
+            >*</button>
+            <button class="btn"
+            onclick="
+            display=display+'/'
+            document.querySelector('.box').value=display";
+            >/</button>
+            <button class="btn"
+            onclick="
+            display=eval(display);
+            document.querySelector('.box').value=display";
+            >=</button>
+            <button class="btn" onclick="
+            display='';
+            document.querySelector('.box').value=display">C</button>
+        </div>
+        <div class="divc">
+        <h2> Calculator </h2>
+        </div>
+    </div>
+</body>
+<script>
+    let display='';
+</script>
+</html>
